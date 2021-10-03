@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Gemunu Libre", sans-serif;
+  background-color: #424242;
+  color: #cfd8dc;
+  display: grid;
+  place-items: center;
+}
+.container {
+  border: solid 1px #aaa;
+  border-radius: 10px;
+  padding: 1.1rem;
+  text-align: center;
+  height: 500px;
+  width: 550px;
+  box-shadow: 1px 1px 5px 0 #f00;
+  user-select: none;
+}
+header h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px #f00;
+}
+.score-board {
+  border: 1px solid white;
+  position: relative;
+  width: 240px;
+  height: 80px;
+  margin: 25px auto;
+  font-size: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.score-board p {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+}
+.user {
+  left: -25px;
+  background-color: #43a047;
+}
+.comp {
+  right: -25px;
+  background-color: #f44336;
+}
+.hands {
+  margin-top: 50px;
+  user-select: none;
+}
+.hands i {
+  margin: 10px;
+  cursor: pointer;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  font-size: 100px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #000;
+  background-color: #cfd8dc;
+  color: #000;
+  transition: 300ms;
+}
+.hands i:hover {
+  color: #555;
+  box-shadow: 2px 2px 5px #f00;
+}
+.results p {
+  font-size: 25px;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+    height: 420px;
+  }
+  .hands i {
+    font-size: 55px;
+    padding: 5px;
+  }
+}
+footer a {
+  color: #f44336;
+}
